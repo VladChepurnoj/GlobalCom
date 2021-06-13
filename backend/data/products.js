@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: "1",
     name: "Huawei P Smart 2021 NFC 128GB Green",
     image: "/images/huaweiPSmart.png",
     description:
@@ -13,7 +12,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "2",
     name: "Apple iPhone 12 Pro Max 128GB",
     image: "/images/iphone12Pro.jpeg",
     description:
@@ -26,7 +24,6 @@ const products = [
     numReviews: 8,
   },
   {
-    _id: "3",
     name: "Motorola G9 Power 4/128",
     image: "/images/motorola.jpg",
     description:
@@ -39,7 +36,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "4",
     name: "Poco M3 Pro 6/128GB",
     image: "/images/pocoM3.jpg",
     description:
@@ -52,7 +48,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "5",
     name: "Realme 7 Pro 8/128GB",
     image: "/images/realme7Pro.jpg",
     description:
@@ -65,7 +60,6 @@ const products = [
     numReviews: 10,
   },
   {
-    _id: "6",
     name: "Samsung Galaxy M12 4/64GB",
     image: "/images/samsungGalaxyM12.jpg",
     description:
@@ -78,7 +72,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "7",
     name: "Xiaomi Mi 10T 6/128GB ",
     image: "/images/xiaomiMi10T.jpg",
     description:
@@ -92,4 +85,4 @@ const products = [
   },
 ];
 
-module.exports = products;
+export default products;
