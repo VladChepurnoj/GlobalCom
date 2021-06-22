@@ -12,7 +12,7 @@ const ShippingScreen = ({ history }) => {
   const [address, setAddress] = useState(shippingAddress.address);
   const [city, setCity] = useState(shippingAddress.city);
   const [postalCode, setPostalCode] = useState(shippingAddress.postalCode);
-  //   const [country, setCountry] = useState(shippingAddress.country);
+  const [country, setCountry] = useState(shippingAddress.country);
 
   const dispatch = useDispatch();
 
@@ -23,7 +23,7 @@ const ShippingScreen = ({ history }) => {
         address,
         city,
         postalCode,
-        // country
+        country
       })
     );
     history.push("/payment");
@@ -67,16 +67,16 @@ const ShippingScreen = ({ history }) => {
           ></Form.Control>
         </Form.Group>
 
-        {/* <Form.Group controlId='country'>
+        <Form.Group controlId='country'>
           <Form.Label>Країна</Form.Label>
           <Form.Control
             type='text'
-            placeholder='Введіть місто'
+            placeholder='Введіть країну'
             value={country  }
             required
-            onChange={(e) => setСountry(e.target.value)}
+            onChange={(e) => setCountry(e.target.value)}
           ></Form.Control>
-        </Form.Group> */}
+        </Form.Group>
 
         <Button type='submit' variant='primary'>
           Продовжити замовлення
