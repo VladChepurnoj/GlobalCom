@@ -84,9 +84,9 @@ const updateProduct = asyncHandler(async (req, res) => {
   }
 });
 
-// @desc         Create new review
-// @route        POST /api/products/:id/reviews
-// @access       Private
+// @desc    Create new review
+// @route   POST /api/products/:id/reviews
+// @access  Private
 const createProductReview = asyncHandler(async (req, res) => {
   const { rating, comment } = req.body;
 
@@ -99,7 +99,7 @@ const createProductReview = asyncHandler(async (req, res) => {
 
     if (alreadyReviewed) {
       res.status(400);
-      throw new Error("Product already reviewed");
+      throw new Error("Товар вже оцінено");
     }
 
     const review = {
@@ -118,10 +118,10 @@ const createProductReview = asyncHandler(async (req, res) => {
       product.reviews.length;
 
     await product.save();
-    res.status(201).json({ message: "Review added" });
+    res.status(201).json({ message: "Відгук написано" });
   } else {
     res.status(404);
-    throw new Error("Product not found");
+    throw new Error("Товар не знайдено");
   }
 });
 
